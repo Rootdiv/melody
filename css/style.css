@@ -92,6 +92,10 @@ body {
   opacity: 1;
 }
 
+path.current-floor {
+  opacity: 1;
+}
+
 .counter-group {
   display: flex;
   flex-direction: column;
