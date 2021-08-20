@@ -5,11 +5,23 @@ $(document).ready(function() {
   const floorPath = $('.home-image path');
   const counterUp = $('.counter-up');
   const counterDown = $('.counter-down');
+  const modal = $('.modal');
+  const modalCloseButton = $('.modal-close-button');
+  const viewFlats = $('.view-flats');
+
   floorPath.on('mouseover', function() {
     floorPath.removeClass('current-floor');
     currentFloor = $(this).attr('data-floor');
     $('.counter').text(currentFloor);
   });
+
+  function toggleModal() {
+    modal.toggleClass('is-open');
+  }
+
+  floorPath.on('click', toggleModal);
+  modalCloseButton.on('click', toggleModal);
+  viewFlats.on('click', toggleModal);
 
   function usCounterFloor(floor) {
     return floor.toLocaleString('en-US', {
