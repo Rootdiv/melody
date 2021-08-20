@@ -248,3 +248,57 @@ path.current-flat {
   border: none;
   background-color: #fff;
 }
+
+.footer {
+  background-color: #D7D7D7;
+  padding: 50px 0;
+  border-top: 4px solid #3596F5;
+}
+
+.footer .logo {
+  margin-right: 37px
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.social-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.social-link {
+  margin-right: 15px;
+}
+
+.footer .navbar-item {
+  margin: 0 10px;
+}
+
+.footer .navbar-item:last-child {
+  margin-right: 0;
+}
+
+.footer .navbar-link {
+  color: #635854;
+}
+
+.footer .navbar-contacts {
+  text-align: left;
+  margin-right: 60px;
+}
+
+.footer .navbar-text {
+  color: #635854;
+}
+
+.footer .navbar-phone {
+  color: #635854;
+}
