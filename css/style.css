@@ -212,7 +212,7 @@ path.current-floor {
 }
 
 .flat-item {
-  margin-bottom: 10px;
+  padding: 5px 0;
 }
 
 .flat-link {
@@ -222,9 +222,14 @@ path.current-floor {
   text-decoration: none;
 }
 
-.flat-link:hover {
+.flat-link:hover,
+.current-flat {
   color: #3596F5;
   text-decoration: underline;
+}
+
+path.current-flat {
+  opacity: 1;
 }
 
 .modal-alert {

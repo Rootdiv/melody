@@ -8,6 +8,8 @@ $(document).ready(function() {
   const modal = $('.modal');
   const modalCloseButton = $('.modal-close-button');
   const viewFlats = $('.view-flats');
+  const flatsPath = $('.modal-image path');
+  const flatsLink = $('.flat-link');
 
   floorPath.on('mouseover', function() {
     floorPath.removeClass('current-floor');
@@ -47,5 +49,20 @@ $(document).ready(function() {
       currentFloor--;
       floorToggle(currentFloor);
     }
+  });
+
+  function deleteClass() {
+    flatsPath.removeClass('current-flat');
+    flatsLink.removeClass('current-flat');
+  }
+
+  flatsPath.on('mouseover', function() {
+    deleteClass();
+    $(`[data-flat-link="${$(this).attr('data-flat')}"]`).toggleClass('current-flat');
+  });
+
+  flatsLink.on('mouseover', function() {
+    deleteClass();
+    $(`[data-flat="${$(this).attr('data-flat-link')}"]`).toggleClass('current-flat');
   });
 });
