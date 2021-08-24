@@ -10,6 +10,12 @@ $(document).ready(function() {
   const viewFlats = $('.view-flats');
   const flatsPath = $('.modal-image path');
   const flatsLink = $('.flat-link');
+  const menuButton = $('.menu-button');
+  const navbarPenal = $('.navbar-penal');
+
+  menuButton.on('click', function() {
+    navbarPenal.toggle('medium');
+  });
 
   floorPath.on('mouseover', function() {
     floorPath.removeClass('current-floor');
